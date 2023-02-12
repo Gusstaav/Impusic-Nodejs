@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="/cssposLogin/editChannel/index.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id='container' class="container">
+        <form method="post" class="form" action="/editChannel" enctype="multipart/form-data">
+            <div id="voltar">
+           
+            </div>
+            <label id="bannerLabel" class="label-banner">
+                <input name="banner" type="file" accept="image/*">
+                <span id="imageBanner">Escolha uma imagem para o banner</span>
+            </label>
+            
+            <label id="label-imagePeril" class="label-imagePerfil">
+                <input name="imagePerfil" type="file" accept="image/*" />
+                <span id="imagePerfil">Escolha uma imagem para o perfil</span>
+            </label>
+            
+            <div class="divAviso">
+                <span id="Aviso">Se for atualizar seu canal por favor preencha todos os campo para não ocorrer erros</span>
+            </div>
+
+            <div id="input">
+           
+            </div>
+            <div class="infoChannel">
+                <input name="nameChannel" id="nameChannel" placeholder="nome de canal" />
+                <input name="description" id="description" placeholder="descrição do canal" />
+                <button type="submit" class="bottomCriar" >Salvar</button>
+            </div>
+            <script src="/viewsposLogin/editChannel/index.js"></script>
+        </form>
+    </div>
+</body>
+</html>

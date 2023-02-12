@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="/css/home/index.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <div class="header">
+            <h1 class="title">Impusic</h1>
+            <div class="bottomLogar">
+                <a class="logar" href="#demo-modal">Entrar</a>
+              </div>
+               
+                <div id="demo-modal" class="modal">
+                <div class="modal__content">
+                    <p class="titleModal">Seja bem vindo ao Impusic</p>
+                
+                    <form class="formLogin" action="/login" method="post">
+                        <input name="email" class="inputEmail" placeholder="email" />
+                        <input name="password" class="inputSenha" placeholder="senha" />
+                            <div class="bottoms">
+                                <button type="submit" class="enviarLogin">Logar</button>
+                                    <div class="bottomCloseModal">
+                                    <a href="/" class="modal__footer-btn-close"> Sair </a>
+                                </div>
+                            </div>
+                    </form>
+                    </div>
+                </div>
+
+                <div id="demo-modal-error" class="modal">
+                    <div class="modal__content">
+                      <p class="titleModalError">Seja bem vindo ao Impusic</p>
+                   
+                      <form class="formLogin" action="/login" method="post">
+                        <h3 class="AlertError">Error no email ou senha por favor tente de novo</h3>
+                            <input name="email" class="inputEmailError" placeholder="email" />
+                            <input name="password" class="inputSenhaError" placeholder="senha" />
+                                <div class="bottoms">
+                                    <button type="submit" class="enviarLogin">Logar</button>
+                                        <div class="bottomCloseModal">
+                                        <a href="/" class="modal__footer-btn-close"> Sair </a>
+                                    </div>
+                                </div>
+                      </form>
+                    </div>
+                  </div>
+
+            <div class="bottomCadastrar">
+                <a class="logar" href="/cadastro"><p>Cadastro</p></a>
+            </div>
+        </div>
+
+        
+            
+            <script src="/views/home/index.js"></script>
+        
+
+</body>
+</html>

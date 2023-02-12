@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(19, 19, 19);
+}
+
+.container1{
+    float: left;
+    width: 100%;
+    height: 500px;
+}
+#voltar{
+    border: solid;
+    border-width: 1px;
+    border-color: blueviolet;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    height: 30px;
+    width: 60px;
+    margin: 10px;
+    font-size: 20px;
+}
+#voltar:hover{
+    border-color: blanchedalmond;
+}
+.voltar{
+    position: relative;
+    text-decoration: none;
+    color: aliceblue;
+    margin: auto;
+}
+.voltar:hover{
+    cursor: pointer;
+}
+
+input[type='file']{
+    display: none;
+}
+
+/* labels banner*/
+.label-banner{
+    width: 99.7%;
+    aspect-ratio: 32/5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(26, 26, 26);
+    border: groove;
+   border-width: 1px;
+   border-color: antiquewhite;
+}
+.label-banner:hover{
+    transition: 300ms;
+   border: groove;
+   border-width: 1px;
+   border-color: rgb(233, 2, 233);
+   cursor: pointer;
+}
+
+#imageBanner{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: aliceblue;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.imgBanner{
+    width: 100%;
+    aspect-ratio: 32/5;
+}
+.fileUndefinid{
+    background-color: bisque;
+    padding: 10px;
+}
+
+/* label foto de perfil*/
+.label-imagePerfil{
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 200px;
+    aspect-ratio: 26/26;
+    border: groove;
+    border-color: beige;
+    border-width: 1px;
+    border-radius: 250px;
+}
+
+.label-imagePerfil:hover{
+    transition: 300ms;
+    cursor: pointer;
+    border: groove;
+    border-color: rgb(255, 0, 212);
+    border-width: 1px;
+    border-radius: 250px;
+}
+#imagePerfil{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: aliceblue;
+    border-radius: 250px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.imgPerfil{
+    width: 100%;
+    height: 100%;
+}
+/*Alert*/
+#Aviso{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.divAviso{
+    margin-top: 15px;
+    padding: 5px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+    border-width: 1px;
+    border-color: red;
+    animation: animate 1s  infinite;
+}
+@keyframes animate{
+    0%{
+      border-color: transparent;
+    }
+    50%{
+        border-color: purple;
+    }
+    100%{
+        border-color: transparent;
+    }
+  }
+input[type='text']{
+    display: none;
+}
+/* banner e foto de perfil*/
+
+.infoChannel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 0;
+    height: 250px;
+}
+/* nome e descrição do canal*/
+#nameChannel{
+    outline: none;
+    color: white;
+    padding: 5px;
+    margin-top: 0;
+    height: 35px;
+    width: 70%;
+    background-color: transparent;
+    border: groove;
+    border-width: 1px;
+}
+#description{
+    outline: none;
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+    height: 35px;
+    width: 70%;
+    background-color: transparent;
+    border: groove;
+    border-width: 1px;
+}
+
+.bottomCriar{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: transparent;
+    color: aliceblue;
+    width: 25%;
+    border-color: blueviolet;
+}
+.bottomCriar:hover{
+    cursor: pointer;
+    border-color: rgb(203, 148, 255);
+}

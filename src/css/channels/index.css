@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(19, 19, 19);
+}
+
+.container1{
+    float: left;
+    width: 100%;
+    height: 500px;
+}
+
+.voltar{
+    position: fixed;
+    height: 50px;
+    width: 80px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* banner e foto de perfil*/
+
+.banner{
+    width: 100%;
+    aspect-ratio: 30/5;
+    object-fit: cover;
+}
+.fotoPerfil{
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    object-fit: cover;
+    width: 150px;
+    aspect-ratio: 26/26;
+    border: groove;
+    border-color: beige;
+    border-width: 1px;
+    border-radius: 250px;
+}
+
+.infoChannel{
+    display: block;
+    flex-direction: column;
+    width: 50%;
+    word-break:  break-word;;
+    margin: 0 auto;
+    height: 100px;
+}
+/* nome e descrição do canal*/
+
+.editChannel{
+    margin-left: 2%;
+    display: flex;
+    height: 25px;
+    width: 100px;
+    background-color: rgb(17, 17, 212);
+}
+.editLink{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px;
+    color: aliceblue;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+.editLink:hover{
+    cursor: pointer;
+}
+.name{
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+}
+.description{
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    color: rgb(197, 197, 197);
+}
+
+/*grid dos videos */
+
+.videos{
+    display: grid;
+    position: relative;
+    grid-template-columns: 210px 210px 210px ;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+.linkVideo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.thumbnail{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100px;
+}
+.title{
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}

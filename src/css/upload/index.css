@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(3, 3, 3);
+  }
+
+.form2{
+    width: 900px;
+    height: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+.formUpload {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(46, 46, 46);
+  }
+
+#titleVideo{
+    padding: 15px;
+    margin-top: 20px;
+    width: 90%;
+    height: 30px;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    outline: none;
+    border: solid;
+    border-color: whitesmoke;
+    border-width: 1px;
+}
+
+#descriptionVideo{
+    padding: 15px;
+    margin-top: 20px;
+    width: 90%;
+    height: 30px;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    outline: none;
+    border: solid;
+    border-color: whitesmoke;
+    border-width: 1px;
+}
+
+input[type='file']{
+    display: none;
+}
+label{
+
+    padding: 15px;
+    margin-top: 30px;
+    height: 300px;
+    width: 600px;
+    background-color: rgb(61, 61, 61);
+}
+
+label:hover {
+    padding: 15px;
+    margin-top: 30px;
+    height: 300px;
+    width: 600px;
+    background-color: rgb(61, 61, 61);
+    outline: none;
+    cursor: pointer;
+    border: solid;
+    border-color: whitesmoke;
+    border-width: 1px;
+    transition: 0.3s;
+}
+
+
+label:hover {
+    padding: 15px;
+    margin-top: 30px;
+    height: 300px;
+    width: 600px;
+    background-color: rgb(61, 61, 61);
+    outline: none;
+    cursor: pointer;
+    border: solid;
+    border-color: whitesmoke;
+    border-width: 1px;
+    transition: 0.3s;
+}
+
+#enviar{
+    padding: 20px;
+    margin-top: 30px;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+    background-color: blueviolet;
+    color: whitesmoke;
+}

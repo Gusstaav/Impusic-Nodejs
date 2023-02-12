@@ -1,0 +1,321 @@
+body{
+  margin: auto;
+  padding: auto;
+  background-color: rgb(3, 3, 3);
+}
+/* header */
+.header{
+  align-items: center;
+  justify-content: left;
+  background-color: rgb(0, 0, 0, 0.3);
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.title{  
+  padding: 5px;
+  margin-left: 5px;
+  color: rgb(101, 29, 168);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bottomLogar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 80%;
+  height: 40px;
+  width: 80px;
+  padding: 5px;
+  background-color: rgb(44, 11, 75);
+  border-radius: 2px;
+}
+
+.logar{
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bottomCadastrar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 80px;
+  margin-left: 5px;
+  padding: 5px;
+  border: solid;
+  border-width: 1px;
+  border-color: rgb(44, 11, 75);
+  border-radius: 2px;
+}
+
+/* modal de login*/
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(14, 14, 14, 0.7);
+  transition: all 0.4s;
+}
+ 
+.modal:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.content {
+  border-radius: 4px;
+  position: relative;
+  width: 500px;
+  max-width: 90%;
+  background: #fff;
+  padding: 1em 2em;
+}
+
+.modal__content{
+  background-color: rgb(37, 37, 37);
+  padding: 10px;
+  height: 50%;
+  width: 50%;
+}
+
+.bottomCloseModal{
+  padding: 5px;
+  text-align: center;
+  text-justify: center;
+  height: 25px;
+  width: 80px;
+  border: solid;
+  border-color: rgb(101, 29, 168);
+  border-width: 2px;
+}
+
+.bottomCloseModal:hover{
+  cursor: pointer;
+  transition: 1s;
+  border-width: 2px;
+  border-color: rgb(144, 61, 221);
+}
+
+.titleModal{
+  padding: 5px;
+  border-color: rgb(101, 29, 168);
+  border-width: 2px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.modal__footer-btn-close{
+  
+  color: #fff;
+  text-decoration: none;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #585858;
+  text-decoration: none;
+}
+ 
+.footer-btn-close {
+  width: 150px;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #cfcca8;
+  color: #000000;
+  border-radius: 3px;
+}
+
+/* formulario de login*/
+.formLogin{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+.inputEmail{
+  padding: 5px;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  width: 100%;
+  height: 35px;
+  border-right: none;
+  border-bottom: groove;
+  border-width: 2px;
+}
+.inputSenha{
+  background-color: transparent;
+  color: white;
+  outline: none;
+  padding: 5px;
+  margin-top: 20px;
+  width: 100%;
+  height: 35px;
+  border-right: none;
+  border-bottom: groove;
+  border-width: 2px;
+}
+.enviarLogin{
+  background-color: rgb(101, 29, 168);
+  margin-right: 10px;
+  border: none;
+  color: white;
+  height: 40px;
+  width: 95px;
+}
+.enviarLogin:hover{
+  transition: 1s;
+  border: solid;
+  border-width: 1px;
+  border-color: white;
+}
+.bottoms{
+  display: flex;
+  flex-direction: row;
+  margin-top: 15%;
+}
+
+/*modal error caso o login der erro*/
+.titleModalError{
+  padding: 5px;
+  margin: 0;
+  margin-top: 5px;
+  border-color: rgb(101, 29, 168);
+  border-width: 2px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+.inputEmailError{
+  padding: 5px;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  width: 100%;
+  height: 35px;
+  border-right: none;
+  border-bottom: groove;
+  border-bottom-color: red;
+  border-width: 2px;
+}
+.inputSenhaError{
+  background-color: transparent;
+  color: white;
+  outline: none;
+  padding: 5px;
+  margin-top: 20px;
+  width: 100%;
+  height: 35px;
+  border-right: none;
+  border-bottom: groove;
+  border-bottom-color: red;
+  border-width: 2px;
+}
+.AlertError{
+  transition: 1s;
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+}
+
+/* feed*/
+
+.container{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.gridVideos{
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,min(100%, 300px));
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: #000000;
+    
+}
+.LinkVideo{
+  text-decoration: none;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 99%;
+  height: 85%;
+  align-items: center;
+  justify-content: center;
+  border: groove;
+  border-width: 1px;
+  border-color: transparent;
+}
+
+.LinkVideo:hover{
+  border: groove;
+  border-width: 1px;
+  border-color: whitesmoke;
+}
+
+.thumbnail{
+  margin: auto;
+  padding: 2px;
+  height: 100%;
+  width: 100%;
+}
+
+.cabecalho{
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.imagesChannels{
+  margin-left: 5px;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+.ChannelInfo{
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+  width: 100%;
+  text-decoration: none;
+}
+#titleVideo{
+  text-decoration: none;
+  width: 100%;
+  margin-left: 10px;
+  margin-bottom: 0;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border-color: transparent;
+}
+.nameChannel{
+  text-decoration: none;
+  margin-left: 10px;
+  color: #585858;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
