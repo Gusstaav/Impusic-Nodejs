@@ -6,7 +6,7 @@ body{
 /* header */
 .header{
   align-items: center;
-  justify-content: left;
+  justify-content: space-between;
   background-color: rgb(0, 0, 0, 0.3);
   height: 60px;
   padding: 10px;
@@ -20,11 +20,27 @@ body{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.navigations{
+  display: flex;
+}
+
+.Links{
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: rgb(194, 194, 194);
+  padding: 10px;
+}
+
+.bottonsLogarCadastrar{
+  display: flex;
+  flex-direction: row;
+}
+
 .bottomLogar{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 80%;
   height: 40px;
   width: 80px;
   padding: 5px;
@@ -237,6 +253,7 @@ body{
   width: 100%;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .gridVideos{
@@ -269,8 +286,8 @@ body{
 
 .LinkVideo:hover{
   border: groove;
-  border-width: 1px;
-  border-color: whitesmoke;
+  border-width: 0.1px;
+  border-color: darkgray;
 }
 
 .thumbnail{
@@ -296,7 +313,7 @@ body{
 
 .ChannelInfo{
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   flex-direction: column;
   width: 100%;
   text-decoration: none;
@@ -314,6 +331,7 @@ body{
 .nameChannel{
   text-decoration: none;
   margin-left: 10px;
+  margin-bottom: 0;
   color: #585858;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;

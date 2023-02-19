@@ -38,17 +38,41 @@ body{
 
 .containerDescripiton{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: rgb(46, 46, 46);
-    padding: 5px;
+    padding: 10px;
+    height: 40px;
     border-radius: 5px;
 }
 
 .videoDescription{
+    word-break: break-all;
+    overflow: hidden;
+    text-align: justify;
     margin-top: 0;
+    margin-bottom: 0;
     color: rgb(233, 228, 228);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+}
+
+.bottomLeiaMais{
+    display: block;
+    height: 30px;
+    width: 70px;
+    background-color: transparent;
+    color: aliceblue;
+    border-color: transparent;
+}
+
+.bottomLeiaMenos{
+    display: none;
+    height: 30px;
+    width: 70px;
+    background-color: transparent;
+    color: aliceblue;
+    border-color: transparent;
 }
 
 .informacoesChannel{
@@ -61,6 +85,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-decoration: none;
 }
 
 .imgPerfil{

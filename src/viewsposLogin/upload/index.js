@@ -9,7 +9,7 @@ const idChannel = fetch('/getchannel/'+idUser)
     const divForm = window.document.querySelector('.form2')
    
     divForm.innerHTML=`<form action="/uploads/${idChannel}/" class="formUpload" method="post" enctype="multipart/form-data" >
-                <h1 class='titleUpload'>Upload</h1>
+                <h1 class='titleUpload'>Criar</h1>
                     <div class="input">
                         <input type='text' name='idUser' value='${idUser}' />
                         <input type='text' name='idchannel' value='${idChannel}' />

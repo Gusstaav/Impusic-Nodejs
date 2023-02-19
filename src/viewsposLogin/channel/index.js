@@ -115,6 +115,7 @@ function Channel(elements, datas){
         
         var linkVideo =  window.document.createElement('a')
         linkVideo.className="linkVideo"
+        linkVideo.href='/wach?v='+i.id
 
         linkVideo.appendChild(video)
         linkVideo.appendChild(titleVideo)

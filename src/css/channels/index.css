@@ -105,6 +105,11 @@ body{
     align-items: center;
     text-align: center;
 }
+.linkVideo:hover{
+    border: groove;
+    border-width: 0.1px;
+    border-color: darkgray;
+}
 .thumbnail{
     margin-left: auto;
     margin-right: auto;

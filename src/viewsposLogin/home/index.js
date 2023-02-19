@@ -25,7 +25,7 @@ var urlPadrao = window.location.href;
 
 
 function adcElemento (datas) {
-    
+        console.log(datas)
 
             if(datas.url === datas[0]){
                 var linkModal = window.document.createElement('a')
@@ -54,19 +54,25 @@ function adcElemento (datas) {
             var a1 =window.document.createElement('a');
             a1.className='links';
             a1.innerText='Home';
-            a1.href='/';
+            a1.href=window.location.href;
             
-            
-            var a2 =window.document.createElement('a');
-            a2.className='links';
-            a2.innerText='Upload';
-            a2.href='/uploads/'+idUser;
+            if(datas.url === datas[0]){
+                var a2 = window.document.createElement('a')
+                a2.className='links'
+                a2.innerText='Criar'
+                a2.href='#modal'
+            }else{
+                var a2 =window.document.createElement('a');
+                a2.className='links';
+                a2.innerText='Criar';
+                a2.href='/uploads/'+idUser;
+            }
 
 
             var a3 =window.document.createElement('a');
             a3.className='links';
             a3.innerText='Sobre';
-            a3.href='/';
+            a3.href='/sobre';
             
             //bottons sair e channel
 

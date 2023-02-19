@@ -94,6 +94,11 @@ router.get("/homeuserid/:id?/", (req, res) => {
    
 })
 
+//tela sobre
+router.get('/sobre', (req, res) => {
+    res.sendFile(path.join(__dirname, '../src/views/sobre', 'index.html'))
+})
+
 //tela de upload de video
 
 router.get('/uploads/:id?/', (req, res) => {
@@ -152,7 +157,6 @@ router.post('/createChannel/:id?',multer(createChannel).fields([{
     const urlBanner = req.body.urlBanner
     const urlImagePerfil = req.body.urlImagePerfil
 
-    console.log(req.body)
     uploadChannelBD(`INSERT INTO channels(iduser, name, description, urlimageperfil, urlbanner) VALUES('${idUser}', '${name}', '${description}', '${urlImagePerfil}', '${urlBanner}')`, res, idUser)
 })
 
